@@ -1,5 +1,7 @@
+# Nitin Rai
+# Agricultural and Biosystems Engineering
+# North Dakota State University
 #Load Libraries, i.e., EBImage and Keras (Using Tensorflow by Google as Backend)
-
 library(png)
 library(EBImage)
 library(keras)
@@ -19,9 +21,6 @@ library(tensorflow)
 #pics <- c('1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg', '21.jpg', '22.jpg', '23.jpg', '24.jpg', '25.jpg',
           #'26.jpg', '27.jpg', '28.jpg', '29.jpg', '30.jpg', '31.jpg', '32.jpg', '33.jpg', '34.jpg', '35.jpg', '36.jpg', '37.jpg', '38.jpg', '39.jpg', '40.jpg', '41.jpg', '42.jpg', '43.jpg', '44.jpg', '45.jpg', '46.jpg', '47.jpg', '48.jpg', '49.jpg', '50.jpg',
           #'t1.jpg', 't2.jpg', 't3.jpg', 't4.jpg', 't5.jpg', 't6.jpg', 't7.jpg', 't8.jpg', 't9.jpg', 't10.jpg')
-
-
-
 #pic_train <- list.files(path="C:\\Users\\nitin\\OneDrive\\Desktop\\CourseWork\\R Codes_Deep_learning\maize_dataset", pattern="*.png",all.files=F, full.names=F, no.. = F)  
 #pic_train
 #pic_train <- flow_images_from_directory(directory = "C:\\Users\\nitin\\OneDrive\\Desktop\\CourseWork\\R Codes_Deep_learning\\ml_dataset", generator = image_data_generator(),
@@ -58,7 +57,6 @@ mypic <- list()
 #using for loop to read all the images and save it in mypic
 for (i in 1:100) {
   mypic[[i]] <- readImage(pics[i])
-  
 }
 #Printing and checking if the above code is working
 print(mypic[[2]])
@@ -87,7 +85,6 @@ str(mypic)
 train <- NULL
 for (i in 51:92) {
   train <- rbind(train, mypic[[i]])
-  
 }
 str(train)
 # For training data on carset using rbind function
