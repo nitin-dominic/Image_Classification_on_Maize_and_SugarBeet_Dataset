@@ -1,2 +1,2 @@
 # Image_Classification_on_Maize_and_SugarBeet Dataset
- A simple image (Maize and Sugarbeet in thi case) has been implmented on RStudio. 
+ A simple image (Maize and Sugarbeet in thi case) has been implmented on RStudio. The only demerit this algorithm possess is about manually adding label values for the number of classes present. For example, I had to manually enter 0s and 1s for each number of Maize and Sugarbeet images present in the directory. I'm still working on finding ways to automatize/replace with a newer method.
